@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Route} from "react-router-dom";
 import {Navbar} from '../Navbar/navbar'
 import {IngredientList} from "../Ingredients/ingredient-list";
 import {AddIngredientForm} from "../Ingredients/add-ingredient";
+import {IngredientsService} from "../../repository/ingredientsService";
 
 export class App extends Component {
 
@@ -26,6 +27,11 @@ export class App extends Component {
                             () => <AddIngredientForm clicked={this.onSubmit}/>
                         }>
                         </Route>
+                        <Route path={"/ingredients/edit/:name"} render={
+                            (props) => <AddIngredientForm clicked={this.onEdit} {...props}
+                            />
+                        }>
+                        </Route>
                     </div>
                 </main>
             </Router>
@@ -37,8 +43,24 @@ export class App extends Component {
         )
     }
 
-    onSubmit = (ingredient) => {
-        console.log(ingredient);
+    onSubmit = (event, data) => {
+        event.preventDefault();
+        IngredientsService.addIngredient(data).catch(
+            error => {
+                console.log(error);
+            }
+        );
+        window.location.href = "http://localhost:3000/ingredients";
+    };
+
+    onEdit = (event, data, oldName) => {
+        event.preventDefault();
+        IngredientsService.updateIngredient(data, oldName).catch(
+            error => {
+                console.log(error);
+            }
+        );
+        window.location.href = "http://localhost:3000/ingredients";
     }
 }
 

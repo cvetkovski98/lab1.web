@@ -1,5 +1,4 @@
 import axios from '../custom-axios/axios'
-import qs from 'qs'
 
 export const IngredientsService = {
     fetchIngredients: async () => {
@@ -7,7 +6,17 @@ export const IngredientsService = {
     },
 
     addIngredient: async (ingredient) => {
-        const formData = qs.stringify(ingredient);
-        return await axios.post("/ingredients", formData);
+        const dataToSend = JSON.stringify(ingredient);
+        return await axios.post("/ingredients", dataToSend);
+    },
+
+    updateIngredient: async (ingredient, oldName) => {
+        const dataToSend = JSON.stringify(ingredient);
+        return await axios.patch(`/ingredients/${oldName}`, dataToSend);
+    },
+
+    fetchIngredient: async (ingredientName) => {
+        console.log(ingredientName);
+        return await axios.get(`/ingredients/${ingredientName}`);
     }
 };

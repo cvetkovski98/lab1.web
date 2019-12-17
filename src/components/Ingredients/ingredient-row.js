@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 export const IngredientRow = (props) => {
 
@@ -9,10 +10,10 @@ export const IngredientRow = (props) => {
             <td scope="col">{props.value.spicy ? "true" : "false"}</td>
             <td scope="col">{props.value.veggie ? "true" : "false"}</td>
             <td scope="col">
-                <button className="btn btn-sm btn-secondary" >
+                <Link to={`/ingredients/edit/${props.value.name}`} className="btn btn-sm btn-secondary" >
                     <span className="fa fa-edit"/>
                     <span><strong>Edit</strong></span>
-                </button>
+                </Link>
                 <button className="btn btn-sm btn-outline-secondary ">
                     <span className="fa fa-remove"/>
                     <span><strong>Remove</strong></span>

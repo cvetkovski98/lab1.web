@@ -2,20 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07e2e111-3719-4bf8-a158-fd639a4c36e4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Ingredients/ingredient-list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navbar/navbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/custom-axios/axios.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/repository/ingredientsService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Ingredients/add-ingredient.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Ingredients/ingredient-row.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Ingredients/ingredient-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Ingredients/ingredient-list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repository/ingredientsService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/ingredientsService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -87,7 +93,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1576531553224</updated>
-      <workItem from="1576531566462" duration="9132000" />
+      <workItem from="1576531566462" duration="11420000" />
     </task>
     <servers />
   </component>
@@ -99,22 +105,22 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="772" y="258" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1576538435655" />
-    <state width="935" height="287" key="GridCell.Tab.0.bottom" timestamp="1576539748414">
+    <state width="1897" height="287" key="GridCell.Tab.0.bottom" timestamp="1576541522948">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="935" height="287" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1576539748414" />
-    <state width="935" height="287" key="GridCell.Tab.0.center" timestamp="1576539748414">
+    <state width="1897" height="287" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1576541522948" />
+    <state width="1897" height="287" key="GridCell.Tab.0.center" timestamp="1576541522947">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="935" height="287" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1576539748414" />
-    <state width="935" height="287" key="GridCell.Tab.0.left" timestamp="1576539748413">
+    <state width="1897" height="287" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1576541522947" />
+    <state width="1897" height="287" key="GridCell.Tab.0.left" timestamp="1576541522947">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="935" height="287" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1576539748413" />
-    <state width="935" height="287" key="GridCell.Tab.0.right" timestamp="1576539748414">
+    <state width="1897" height="287" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1576541522947" />
+    <state width="1897" height="287" key="GridCell.Tab.0.right" timestamp="1576541522948">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="935" height="287" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1576539748414" />
+    <state width="1897" height="287" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1576541522948" />
     <state width="935" height="352" key="GridCell.Tab.1.bottom" timestamp="1576536506914">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -167,9 +173,9 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="468" y="176" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1576535452926" />
-    <state x="143" y="246" key="run.anything.popup" timestamp="1576540635376">
+    <state x="143" y="246" key="run.anything.popup" timestamp="1576541781834">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="143" y="246" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1576540635376" />
+    <state x="143" y="246" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1576541781834" />
   </component>
 </project>

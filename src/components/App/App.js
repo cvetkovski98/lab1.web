@@ -3,6 +3,7 @@ import './App.css';
 import {BrowserRouter as Router, Route} from "react-router-dom";
 import {Navbar} from '../Navbar/navbar'
 import {IngredientList} from "../Ingredients/ingredient-list";
+import {AddIngredientForm} from "../Ingredients/add-ingredient";
 
 export class App extends Component {
 
@@ -20,7 +21,10 @@ export class App extends Component {
                         <Route path={"/ingredients"} exact render={
                             () => <IngredientList/>
                         }>
-
+                        </Route>
+                        <Route path={"/ingredients/new"} exact render={
+                            () => <AddIngredientForm clicked={this.onSubmit}/>
+                        }>
                         </Route>
                     </div>
                 </main>
@@ -31,6 +35,10 @@ export class App extends Component {
                 {routing}
             </div>
         )
+    }
+
+    onSubmit = (ingredient) => {
+        console.log(ingredient);
     }
 }
 

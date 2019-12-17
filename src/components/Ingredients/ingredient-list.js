@@ -1,5 +1,7 @@
 import React from "react";
 import {IngredientsService} from "../../repository/ingredientsService";
+import {IngredientRow} from "./ingredient-row";
+import {Link} from "react-router-dom";
 
 export class IngredientList extends React.Component {
 
@@ -15,7 +17,6 @@ export class IngredientList extends React.Component {
         let responseData;
         promise.then((data) => {
             responseData = data.data;
-            console.log(responseData);
             this.setState({
                 ingredients: responseData
             });
@@ -24,29 +25,13 @@ export class IngredientList extends React.Component {
 
     render() {
         const ingredientRows = [];
-        this.state.ingredients.map((value, index) => {
+        this.state.ingredients.map((ingredient, index) =>
             ingredientRows.push(
-                <tr>
-                    <td scope="col">{value.name}</td>
-                    <td scope="col">{value.amount}</td>
-                    <td scope="col">{value.spicy ? "true" : "false"}</td>
-                    <td scope="col">{value.veggie ? "true" : "false"}</td>
-                    <td scope="col">
-                        <button className="btn btn-sm btn-secondary">
-                            <span className="fa fa-edit"/>
-                            <span><strong>Edit</strong></span>
-                        </button>
-                        <button className="btn btn-sm btn-outline-secondary ">
-                            <span className="fa fa-remove"/>
-                            <span><strong>Remove</strong></span>
-                        </button>
-                        <button className="btn btn-sm btn-outline-dark">
-                            <span><strong>Details</strong></span>
-                        </button>
-                    </td>
-                </tr>
+                <IngredientRow value={ingredient}
+                               key={ingredient.name}
+                />
             )
-        });
+        );
 
         return (
             <div className="row">
@@ -67,9 +52,9 @@ export class IngredientList extends React.Component {
                         </tbody>
                     </table>
                 </div>
-                <button className="btn btn-outline-secondary">
+                <Link to={"/ingredients/new"} className="btn btn-outline-secondary">
                     <span><strong>Add new ingredient</strong></span>
-                </button>
+                </Link>
             </div>
         )
     }

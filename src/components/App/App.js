@@ -5,6 +5,7 @@ import {Navbar} from '../Navbar/navbar'
 import {IngredientList} from "../Ingredients/ingredient-list";
 import {AddIngredientForm} from "../Ingredients/add-ingredient";
 import {IngredientsService} from "../../repository/ingredientsService";
+import {Details} from "../Ingredients/details";
 
 export class App extends Component {
 
@@ -27,10 +28,15 @@ export class App extends Component {
                             () => <AddIngredientForm clicked={this.onSubmit}/>
                         }>
                         </Route>
-                        <Route path={"/ingredients/edit/:name"} render={
+                        <Route path={"/ingredients/edit/:name"} exact render={
                             (props) => <AddIngredientForm clicked={this.onEdit} {...props}
                             />
                         }>
+                        </Route>
+                        <Route path={"/ingredients/:name/details"} exact render={
+                            (props) => <Details {...props}/>
+                        }>
+
                         </Route>
                     </div>
                 </main>

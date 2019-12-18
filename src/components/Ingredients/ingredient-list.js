@@ -23,12 +23,24 @@ export class IngredientList extends React.Component {
         });
     }
 
+    onDelete = (event, name) => {
+        const promise = IngredientsService.deleteIngredient(name);
+        promise.then(
+            this.setState((oldState) => {
+                return {
+                    ingredients: oldState.ingredients.filter(i => i.name !== name)
+                }
+            })
+        )
+    };
+
     render() {
         const ingredientRows = [];
         this.state.ingredients.map((ingredient, index) =>
             ingredientRows.push(
                 <IngredientRow value={ingredient}
                                key={ingredient.name}
+                               handleDelete={this.onDelete}
                 />
             )
         );

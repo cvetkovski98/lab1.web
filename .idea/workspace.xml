@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07e2e111-3719-4bf8-a158-fd639a4c36e4" name="Default Changelist" comment="feat: implement adding and updating ingredients">
+      <change afterPath="$PROJECT_DIR$/src/components/Ingredients/details.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Ingredients/add-ingredient.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Ingredients/add-ingredient.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Ingredients/ingredient-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Ingredients/ingredient-list.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Ingredients/ingredient-row.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Ingredients/ingredient-row.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/custom-axios/axios.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/custom-axios/axios.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/repository/ingredientsService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/ingredientsService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +98,7 @@
       <updated>1576531553224</updated>
       <workItem from="1576531566462" duration="11872000" />
       <workItem from="1576587038362" duration="8871000" />
-      <workItem from="1576617147964" duration="6038000" />
+      <workItem from="1576617147964" duration="10232000" />
     </task>
     <servers />
   </component>
@@ -113,10 +114,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="555" y="201" width="802" height="679" key="#ESLint/0.0.1920.1080@0.0.1920.1080" timestamp="1576587111310" />
-    <state x="772" y="258" width="376" height="564" key="#com.intellij.ide.util.MemberChooser" timestamp="1576619674230">
+    <state x="772" y="258" width="376" height="564" key="#com.intellij.ide.util.MemberChooser" timestamp="1576625936229">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="772" y="258" width="376" height="564" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1576619674230" />
+    <state x="772" y="258" width="376" height="564" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1576625936229" />
     <state x="561" y="135" key="CommitChangelistDialog2" timestamp="1576623488753">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -193,13 +194,13 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="468" y="176" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1576535452926" />
-    <state x="143" y="246" key="run.anything.popup" timestamp="1576541781834">
+    <state x="143" y="246" key="run.anything.popup" timestamp="1576625874511">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="143" y="246" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1576541781834" />
-    <state x="623" y="238" width="672" height="678" key="search.everywhere.popup" timestamp="1576623414928">
+    <state x="143" y="246" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1576625874511" />
+    <state x="623" y="238" width="672" height="678" key="search.everywhere.popup" timestamp="1576626584887">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="623" y="238" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1576623414928" />
+    <state x="623" y="238" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1576626584887" />
   </component>
 </project>

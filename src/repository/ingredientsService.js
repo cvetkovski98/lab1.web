@@ -18,5 +18,13 @@ export const IngredientsService = {
     fetchIngredient: async (ingredientName) => {
         console.log(ingredientName);
         return await axios.get(`/ingredients/${ingredientName}`);
+    },
+
+    deleteIngredient: async (name) => {
+        return await axios.delete(`/ingredients/${name}`)
+    },
+
+    fetchPizzasForIngredient: async (name) => {
+        return await axios.get(`/ingredients/${name}/pizzas`)
     }
 };

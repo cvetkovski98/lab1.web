@@ -23,7 +23,6 @@ export class AddIngredientForm extends React.Component {
             const promise = IngredientsService.fetchIngredient(this.props.match.params.name);
             promise.then(
                 response => {
-                    console.log(response);
                     this.setState(() => {
                         return {
                             name: response.data.name,

@@ -10,21 +10,20 @@ export const IngredientRow = (props) => {
             <td scope="col">{props.value.spicy ? "true" : "false"}</td>
             <td scope="col">{props.value.veggie ? "true" : "false"}</td>
             <td scope="col">
-                <Link to={`/ingredients/edit/${props.value.name}`} className="btn btn-sm btn-secondary" >
+                <Link to={`/ingredients/edit/${props.value.name}`} className="btn btn-sm btn-secondary">
                     <span className="fa fa-edit"/>
                     <span><strong>Edit</strong></span>
                 </Link>
-                <button className="btn btn-sm btn-outline-secondary ">
+                <button className="btn btn-sm btn-outline-secondary "
+                        onClick={event => props.handleDelete(event, props.value.name)}
+                >
                     <span className="fa fa-remove"/>
                     <span><strong>Remove</strong></span>
                 </button>
-                <button className="btn btn-sm btn-outline-dark">
+                <Link to={`/ingredients/${props.value.name}/details`} className="btn btn-sm btn-outline-dark">
                     <span><strong>Details</strong></span>
-                </button>
+                </Link>
             </td>
         </tr>
     )
-
-
-
 };

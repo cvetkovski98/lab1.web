@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07e2e111-3719-4bf8-a158-fd639a4c36e4" name="Default Changelist" comment="feat: implement adding and updating ingredients">
-      <change afterPath="$PROJECT_DIR$/src/components/Ingredients/details.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Ingredients/add-ingredient.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Ingredients/add-ingredient.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Ingredients/ingredient-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Ingredients/ingredient-list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Ingredients/ingredient-row.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Ingredients/ingredient-row.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repository/ingredientsService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/ingredientsService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +93,8 @@
       <updated>1576531553224</updated>
       <workItem from="1576531566462" duration="11872000" />
       <workItem from="1576587038362" duration="8871000" />
-      <workItem from="1576617147964" duration="10232000" />
+      <workItem from="1576617147964" duration="10348000" />
+      <workItem from="1576706218714" duration="1005000" />
     </task>
     <servers />
   </component>
@@ -126,22 +122,22 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="1227" y="297" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1576591122164" />
-    <state width="1897" height="287" key="GridCell.Tab.0.bottom" timestamp="1576623489024">
+    <state width="1897" height="287" key="GridCell.Tab.0.bottom" timestamp="1576627808400">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1897" height="287" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1576623489024" />
-    <state width="1897" height="287" key="GridCell.Tab.0.center" timestamp="1576623489023">
+    <state width="1897" height="287" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1576627808400" />
+    <state width="1897" height="287" key="GridCell.Tab.0.center" timestamp="1576627808399">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1897" height="287" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1576623489023" />
-    <state width="1897" height="287" key="GridCell.Tab.0.left" timestamp="1576623489023">
+    <state width="1897" height="287" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1576627808399" />
+    <state width="1897" height="287" key="GridCell.Tab.0.left" timestamp="1576627808399">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1897" height="287" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1576623489023" />
-    <state width="1897" height="287" key="GridCell.Tab.0.right" timestamp="1576623489024">
+    <state width="1897" height="287" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1576627808399" />
+    <state width="1897" height="287" key="GridCell.Tab.0.right" timestamp="1576627808399">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1897" height="287" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1576623489024" />
+    <state width="1897" height="287" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1576627808399" />
     <state width="935" height="352" key="GridCell.Tab.1.bottom" timestamp="1576544037313">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

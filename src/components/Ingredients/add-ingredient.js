@@ -9,7 +9,9 @@ export class AddIngredientForm extends React.Component {
             name: '',
             amount: '',
             veggie: false,
-            spicy: false
+            spicy: false,
+            isNameValid: false,
+            isAmountValid: false
         };
         this.handleNameChange = this.handleNameChange.bind(this);
         this.handleAmountChange = this.handleAmountChange.bind(this);
@@ -28,7 +30,9 @@ export class AddIngredientForm extends React.Component {
                             name: response.data.name,
                             amount: response.data.amount,
                             veggie: response.data.veggie,
-                            spicy: response.data.spicy
+                            spicy: response.data.spicy,
+                            isNameValid: true,
+                            isAmountValid: true
                         }
                     })
                 }
@@ -102,7 +106,9 @@ export class AddIngredientForm extends React.Component {
                             className="offset-sm-1 col-sm-3  text-center">
                             <button
                                 type={"submit"}
-                                className="btn btn-primary text-upper">
+                                className="btn btn-primary text-upper"
+                                disabled={!(this.state.isNameValid && this.state.isAmountValid)}
+                            >
                                 Save
                             </button>
                         </div>
@@ -128,13 +134,15 @@ export class AddIngredientForm extends React.Component {
 
     handleNameChange = (e) => {
         this.setState({
-            name: e.target.value
+            name: e.target.value,
+            isNameValid: e.target.value.length <= 50 && e.target.value.length > 0
         });
     };
 
     handleAmountChange = (e) => {
         this.setState({
-            amount: e.target.value
+            amount: e.target.value,
+            isAmountValid: e.target.value.length <= 50 && e.target.value.length > 0
         });
     };
 

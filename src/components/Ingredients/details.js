@@ -49,12 +49,18 @@ export class Details extends React.Component {
 
     render() {
         return (
-            <div>
-                <h1>{this.state.ingredient.name}</h1>
-                <h2>{this.state.ingredient.spicy ? "This ingredient is spicy" : "This ingredient is not spicy"} </h2>
-                <h2>{this.state.ingredient.veggie ? "This ingredient is vegetarian" : "This ingredient is not vegetarian"} </h2>
-                <h3>{this.state.ingredient.amount}</h3>
-                {this.state.pizzas ? this.renderPizzaNames() : <h1>This ingredient is not in any pizza</h1>}
+            <div className={'card'}>
+                <div className={'card-header'}>
+                    <h1 className={'card-title'}>{this.state.ingredient.name}</h1>
+                </div>
+                <div className={'card-body text-left'}>
+                    <h1>Ingredient name: {this.state.ingredient.name}</h1>
+                    <h2>{this.state.ingredient.spicy ? "This ingredient is spicy" : "This ingredient is not spicy"} </h2>
+                    <h2>{this.state.ingredient.veggie ? "This ingredient is vegetarian" : "This ingredient is not vegetarian"} </h2>
+                    <h3>Amount: {this.state.ingredient.amount}</h3>
+                    <h3>The ingredient is found in these pizzas:</h3>
+                    {this.state.pizzas ? this.renderPizzaNames() : <h1>This ingredient is not in any pizza</h1>}
+                </div>
 
             </div>
         )

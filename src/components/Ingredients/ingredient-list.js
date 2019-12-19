@@ -8,8 +8,11 @@ export class IngredientList extends React.Component {
     constructor(props, context) {
         super(props, context);
         this.state = {
-            ingredients: []
-        }
+            ingredients: [],
+            filtered: [],
+            term: ''
+        };
+        this.handleFilter = this.handleFilter.bind(this);
     }
 
     componentDidMount() {
@@ -18,7 +21,8 @@ export class IngredientList extends React.Component {
         promise.then((data) => {
             responseData = data.data;
             this.setState({
-                ingredients: responseData
+                ingredients: responseData,
+                filtered: responseData
             });
         });
     }
@@ -28,15 +32,40 @@ export class IngredientList extends React.Component {
         promise.then(
             this.setState((oldState) => {
                 return {
-                    ingredients: oldState.ingredients.filter(i => i.name !== name)
+                    ingredients: oldState.ingredients.filter(i => i.name !== name),
+                    filtered: oldState.ingredients.filter(i => i.name !== name)
                 }
             })
         )
     };
 
+    handleFilter = (e) => {
+        const term = e.target.value;
+        console.log(term);
+        this.setState((old) => {
+            return {
+                term: term
+            }
+        });
+        if(term){
+            this.setState((oldState) => {
+                return {
+                    filtered: oldState.ingredients.filter(it => it.name.indexOf(term) !== -1)
+                }
+            })
+        } else {
+            this.setState((oldState) => {
+                return {
+                    filtered: oldState.ingredients
+                }
+            })
+        }
+
+    };
+
     render() {
         const ingredientRows = [];
-        this.state.ingredients.map((ingredient, index) =>
+        this.state.filtered.map((ingredient, index) =>
             ingredientRows.push(
                 <IngredientRow value={ingredient}
                                key={ingredient.name}
@@ -47,6 +76,11 @@ export class IngredientList extends React.Component {
 
         return (
             <div className="row">
+                <input className={'form-control'}
+                       name={'term'}
+                       value={this.state.term}
+                       onChange={this.handleFilter}
+                />
                 <h4 className="text-upper text-left">Ingredients</h4>
                 <div className="table-responsive">
                     <table className="table tr-history table-striped small">

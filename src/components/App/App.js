@@ -51,12 +51,14 @@ export class App extends Component {
 
     onSubmit = (event, data) => {
         event.preventDefault();
-        IngredientsService.addIngredient(data).catch(
-            error => {
-                console.log(error);
-            }
-        );
-        window.location.href = "http://localhost:3000/ingredients";
+        IngredientsService.addIngredient(data)
+            .then( res => window.location.href = "http://localhost:3000/ingredients"
+            )
+            .catch(
+                err => {
+                    alert(err.response.data);
+                }
+            );
     };
 
     onEdit = (event, data, oldName) => {
